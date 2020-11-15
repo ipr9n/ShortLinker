@@ -1,0 +1,62 @@
+﻿@model List<LinkViewModel>
+
+    @{
+        ViewData["Title"] = "Home sPage";
+    }
+
+
+
+    @using (Html.BeginForm("CreateLink", "Home"))
+    {
+        <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Сокращение ссылок</span>
+            </div>
+            <input type="text" class="form-control" id="link" name="link" aria-describedby="inputGroup-sizing-lg"/>
+            <input type="submit" class="btn btn-dark" style="margin-left: 20px;" onclick="checkLink()" value="Сократить"/>
+        </div>
+    }
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1> @ViewBag.Text</h1>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Полная ссылка</th>
+                        <th scope="col">Укороченная</th>
+                        <th scope="col">Дата создания</th>
+                        <th scope="col">Количество переходов</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var link in Model)
+                    {
+                        <tr>
+                            <td>@link.FullLink</td>
+                            <td><a href="@ViewBag.Url@link.CutLink">@ViewBag.Url@link.CutLink</a></td>
+                            <td>@link.CreateTime</td>
+                            <td>@link.ViewCount</td>
+                            @using (Html.BeginForm("DeleteLink", "Home"))
+                            {
+                                <input type="hidden" id="id" name="id" value="@link.Id" />
+                                <td><input type="submit" value="Удалить" /></td>
+                            }
+
+                            @using (Html.BeginForm("EditLink", "Home"))
+                            {
+                                <input type="hidden" id="id" name="id" value="@link.Id" />
+                                <td><input type="submit" value="Редактировать ссылку" /></td>
+                            }
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+
+    </script>

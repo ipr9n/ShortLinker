@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkCutter", "LinkCutter\LinkCutter.csproj", "{CE6F9714-F9F4-42E4-949B-8A33D1899375}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{A3D343D9-2F04-4513-AA3C-D7579B6A722C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE6F9714-F9F4-42E4-949B-8A33D1899375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE6F9714-F9F4-42E4-949B-8A33D1899375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE6F9714-F9F4-42E4-949B-8A33D1899375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE6F9714-F9F4-42E4-949B-8A33D1899375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3D343D9-2F04-4513-AA3C-D7579B6A722C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3D343D9-2F04-4513-AA3C-D7579B6A722C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3D343D9-2F04-4513-AA3C-D7579B6A722C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3D343D9-2F04-4513-AA3C-D7579B6A722C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B9243F3-3453-4F33-8ACD-6B8BC7CF7BBE}
+	EndGlobalSection
+EndGlobal
